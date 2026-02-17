@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Stark</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mr.Stark</h1>
+        <div class="player">
+            <div class="album-art">
+                <img id="album-cover" src="https://via.placeholder.com/300x300?text=Album+Art" alt="Album Cover">
+            </div>
+            <div class="track-info">
+                <h2 id="track-title">Select a Song</h2>
+                <p id="artist">Artist</p>
+            </div>
+            <div class="controls">
+                <button id="prev-btn">⏮️</button>
+                <button id="play-pause-btn">▶️</button>
+                <button id="next-btn">⏯️</button>
+                <button id="shuffle-btn">🔀</button>
+            </div>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" value="0" max="100">
+                <span id="duration">0:00</span>
+            </div>
+            <div class="volume-container">
+                <span>🔊</span>
+                <input type="range" id="volume-bar" value="50" min="0" max="100">
+            </div>
+        </div>
+        <div class="playlist">
+            <h3>Playlist</h3>
+            <ul id="song-list"></ul>
+        </div>
+    </div>
+    <audio id="audio-player"></audio>
+    <script src="spotify script.js"></script>
+</body>
+</html>
